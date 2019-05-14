@@ -11,7 +11,7 @@ require 'faker'
 Cocktail.destroy_all
 20.times do
   cocktail = Cocktail.new(
-    name: Faker::GameOfThrones.city
+    name: Faker::Hipster.words(2).join(" ")
   )
   cocktail.save!
 end
@@ -19,7 +19,7 @@ end
 Ingredient.destroy_all
 20.times do
   ingredient = Ingredient.new(
-    name: Faker::Space.galaxy
+    name: Faker::Food.ingredient
   )
   ingredient.save!
 end
