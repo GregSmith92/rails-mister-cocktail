@@ -8,6 +8,7 @@ class CocktailsController < ApplicationController
 
   def show
 
+
   end
 
   def new
