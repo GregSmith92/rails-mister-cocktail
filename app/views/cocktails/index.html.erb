@@ -1,15 +1,15 @@
 <h1>Cocktail List</h1>
-<ul>
+
+<div class="cocktails-index">
   <% @cocktails.each do |cocktail| %>
-    <li>
-      <%= link_to cocktail_path(cocktail) do %>
+    <div class="cocktail-card">
+      <p> <%= link_to cocktail_path(cocktail) do %>
         <%= cocktail.name %>
-      <% end %>
-    </li>
+      <% end %> <p>
+    </div>
   <% end %>
-</ul>
+</div>
 
 <div>
   <%= link_to "Add a cocktail", new_cocktail_path, class:"btn btn-primary" %>
 </div>
-<!-- .join(' ') -->

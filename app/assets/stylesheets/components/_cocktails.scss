@@ -1,0 +1,10 @@
+.cocktails-index {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.cocktail-card {
+  width: 200px
+}
