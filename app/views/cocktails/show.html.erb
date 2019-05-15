@@ -5,12 +5,12 @@
     <p> <%= i.name %> </p>
   <% end %>
 
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+
 
 
 <%= link_to "Update this cocktail", edit_cocktail_path, class: "btn btn-primary" %>
 <%= link_to "Delete this cocktail", cocktail_path, method: :delete, class: "btn btn-danger"  %>
 <%= link_to "View all cocktails", cocktails_path, class: "btn btn-info"  %>
 <%= link_to "Add ingredients", new_cocktail_dose_path(@cocktail), class: "btn btn-info"  %>
-<!--
-    <%= cl_image_tag(apyf0cezpigcptgqixqq,
-      # width: 400, height: 300, crop: :fill) %> -->
+
