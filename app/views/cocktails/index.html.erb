@@ -1,11 +1,13 @@
-<h1>Cocktail List</h1>
+<div class="head">
+<h1>Saucy Cocktails</h1>
+</div>
 
 <div class="cocktails-index">
   <% @cocktails.each do |cocktail| %>
      <%= link_to cocktail_path(cocktail) do %>
       <div class="cocktail-card">
-        <p> <%= cocktail.name %> <p>
-          <%= cl_image_tag cocktail.photo, height: 150, width: 200, crop: :fill %>
+        <%= cl_image_tag cocktail.photo, height: 200, width: 300, crop: :fill %>
+        <p> <%= cocktail.name.capitalize %> <p>
       </div>
     <% end %>
   <% end %>
