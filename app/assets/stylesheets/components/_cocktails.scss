@@ -10,11 +10,14 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 300px;
-  border: 1px solid white;
   margin: 30px 10px;
     p {
   text-decoration: none;
   color: #0bd3d3;
+  margin-left: 20px;
+  margin-top: 19px;
+  font-size: 18px;
+  margin-bottom: 9px;
   }
   p:hover {
     color: white;
@@ -28,10 +31,15 @@ h1 {
   font-family: 'Fascinate', cursive;
   color: #f890e7;
   font-size: 50px;
+  display: inline-block;
 }
 
 .head {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
 }
